@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Agropecuaria Apureñito C.A.</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+
+  <header class="encabezado">
+
+    <div class="contenedor header-contenido">
+
+      <a href="#inicio" class="logo-link">
+        <img
+          src="logo.png"
+          alt="Agropecuaria Apureñito"
+          class="logo"
+        >
+      </a>
+
+      <button
+        class="menu-btn"
+        onclick="abrirMenu()"
+        aria-label="Abrir menú"
+      >
+        ☰
+      </button>
+
+      <nav id="menu">
+
+        <a href="#inicio">Inicio</a>
+
+        <a href="#productos">Productos</a>
+
+        <a href="#promociones">Promociones</a>
+
+        <a href="#consejos">Consejos</a>
+
+        <a href="#blog">Blog</a>
+
+        <a href="#nosotros">Nosotros</a>
+
+        <a href="#galeria">Galería</a>
+
+        <a href="#ubicacion">Ubicación</a>
+
+        <a href="#contacto">Contacto</a>
+
+        <a
+          href="#carrito"
+          class="boton-carrito"
+        >
+          🛒 Mi pedido
+          <span id="contador-carrito">0</span>
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+  <main>
+
+    <!-- INICIO -->
+
+    <section
+      id="inicio"
+      class="hero"
+    >
+
+      <div class="hero-contenido">
+
+        <p class="etiqueta">
+          ALIMENTOS PARA ANIMALES
+        </p>
+
+        <h1>
+          Agropecuaria Apureñito
+        </h1>
+
+        <p>
+          Alimentos de calidad para el crecimiento,
+          desarrollo y producción de tus animales.
+        </p>
+
+        <a
+          href="#productos"
+          class="boton-principal"
+        >
+          Ver productos
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCTOS -->
+
+    <section
+      id="productos"
+      class="seccion"
+    >
+
+      <div class="contenedor">
+
+        <div class="titulo-seccion">
+
+          <span>CATÁLOGO</span>
+
+          <h2>
+            Nuestros productos
+          </h2>
+
+          <p>
+            Selecciona el alimento que necesitas
+            y agrégalo a tu pedido.
+          </p>
+
+        </div>
+
+
+        <div
+          id="catalogo-productos"
+          class="grid-productos"
+        >
+
+          <!-- CERDOS -->
+
+          <article class="producto">
+
+            <img
+              src="cerdo-multiproposito.png"
+              alt="Cerdo Multipropósito"
+              class="foto-producto"
+            >
+
+            <span class="categoria">
+              Cerdos
+            </span>
+
+            <h3>
+              Cerdo Multipropósito
+            </h3>
+
+            <p>
+              Alimento para cerdos
+            </p>
+
+            <p>
+              Presentación: 30 kg
+            </p>
+
+            <p class="precio">
+              $18.00
+            </p>
+
+            <button
+              onclick="agregarAlCarrito(
+                'Cerdo Multipropósito 30 kg',
+                18
+              )"
+            >
+              Agregar al pedido
+            </button>
+
+          </article>
+
+
+          <article class="producto">
+
+            <img
+              src="cerdo-engorde.png"
+              alt="Cerdo Engorde"
+              class="foto-producto"
+            >
+
+            <span class="categoria">
+              Cerdos
+            </span>
+
+            <h3>
+              Cerdo Engorde
+            </h3>
+
+            <p>
+              Alimento para cerdos
+            </p>
+
+            <p>
+              Presentación: 20 kg
+            </p>
+
+            <p class="precio">
+              $18.00
+            </p>
+
+            <button
+              onclick="agregarAlCarrito(
+                'Cerdo Engorde 20 kg',
+                18
+              )"
+            >
+              Agregar al pedido
+            </button>
+
+          </article>
+
+
+          <article class="producto">
+
+            <img
+              src="cerdo-engorde.png"
+              alt="Cerdo Engorde"
+              class="foto-producto"
+            >
+
+            <span class="categoria">
+              Cerdos
+            </span>
+
+            <h3>
+              Cerdo Engorde
+            </h3>
+
+            <p>
+              Alimento para cerdos
+            </p>
+
+            <p>
+              Presentación: 40 kg
+            </p>
+
+            <p class="precio">
+              $35.00
+            </p>
+
+            <button
+              onclick="agregarAlCarrito(
+                'Cerdo Engorde 40 kg',
+                35
+              )"
+            >
+              Agregar al pedido
+            </button>
+
+          </article>
+
+
+          <article class="producto">
+
+            <img
+              src="cerdo-gestante.png"
+              alt="Cerdo Gestante"
+              class="foto-producto"
+            >
+
+            <span class="categoria">
+              Cerdos
+            </span>
+
+            <h3>
+              Cerdo Gestante
+            </h3>
+
+            <p>
+              Alimento para cerdos
+            </p>
+
+            <p>
+              Presentación: 40 kg
+            </p>
+
+            <p class="precio">
+              $33.00
+            </p>
+
+            <button
+              onclick="agregarAlCarrito(
+                'Cerdo Gestante 40 kg',
+                33
+              )"
+            >
+              Agregar al pedido
+            </button>
+
+          </article>
+
+
+          <article class="producto">
+
+            <img
+              src="cerdo-lactante.png"
+              alt="Cerda Lactante"
+              class="foto-producto"
+            >
+
+            <span class="categoria">
+              Cerdos
+            </span>
+
+            <h3>
+              Cerda Lactante
+            </h3>
+
+            <p>
+              Alimento para cerdos
+            </p>
+
+            <p>
+              Presentación: 40 kg
+            </p>
+
+            <p class="precio">
+              $36.00
+            </p>
+
+            <button
+              onclick="agregarAlCarrito(
+                'Cerda Lactante 40 kg',
+                36
+              )"
+            >
+              Agregar al pedido
+            </button>
+
+          </article>
+
+
+          <article class="producto">
+
+            <img
+              src="cerdo-desarrollo.png"
+              alt="Cerdo Desarrollo"
+              class="foto-producto"
+            >
+
+            <span class="categoria">
+              Cerdos
+            </span>
+
+            <h3>
+              Cerdo Desarrollo
+            </h3>
+
+            <p>
+              Alimento para cerdos
+            </p>
+
+            <p>
+              Presentación: 20 kg
+            </p>
+
+            <p class="precio">
+              $20.00
+            </p>
+
+            <button
+              onclick="agregarAlCarrito(
+                'Cerdo Desarrollo 20 kg',
+                20
+              )"
+            >
+              Agregar al pedido
+            </button>
+
+          </article>
+
+
+          <article class="producto">
+
+            <img
+              src="cerdo-desarrollo.png"
+              alt="Cerdo Desarrollo"
+              class="foto-producto"
+            >
+
+            <span class="categoria">
+              Cerdos
+            </span>
+
+            <h3>
+              Cerdo Desarrollo
+            </h3>
+
+            <p>
+              Alimento para cerdos
+            </p>
+
+            <p>
+              Presentación: 40 kg
+            </p>
+
+            <p class="precio">
+              $37.00
+            </p>
+
+            <button
+              onclick="agregarAlCarrito(
+                'Cerdo Desarrollo 40 kg',
+                37
+              )"
+            >
+              Agregar al pedido
+            </button>
+
+          </article>
+
+
+          <!-- POLLOS -->
+
+          <article class="producto">
+
+            <img
+              src="pollo-inicio.png"
+              alt="Pollo Inicio"
+              class="foto-producto"
+            >
+
+            <span class="categoria">
+              Pollos
+            </span>
+
+            <h3>
+              Pollo Inicio
+            </h3>
+
+            <p>
+              Alimento para pollos
+            </p>
+
+            <p>
+              Presentación: 40 kg
+            </p>
+
+            <p class="precio">
+              $38.00
+            </p>
+
+            <button
+              onclick="agregarAlCarrito(
+                'Pollo Inicio 40 kg',
+                38
+              )"
+            >
+              Agregar al pedido
+            </button>
+
+          </article>
+
+
+          <article class="producto">
+
+            <img
+              src="pollo-engorde.png"
+              alt="Pollo Engorde"
+              class="foto-producto"
+            >
+
+            <span class="categoria">
+              Pollos
+            </span>
+
+            <h3>
+              Pollo Engorde
+            </h3>
+
+            <p>
+              Alimento para pollos
+            </p>
+
+            <p>
+              Presentación: 40 kg
+            </p>
+
+            <p class="precio">
+              $36.00
+            </p>
+
+            <button
+              onclick="agregarAlCarrito(
+                'Pollo Engorde 40 kg',
+                36
+              )"
+            >
+              Agregar al pedido
+            </button>
+
+          </article>
+
+
+          <!-- GALLINAS -->
+
+          <article class="producto">
+
+            <img
+              src="gallina-ponedora.png"
+              alt="Gallina Ponedora"
+              class="foto-producto"
+            >
+
+            <span class="categoria">
+              Gallinas
+            </span>
+
+            <h3>
+              Gallina Ponedora
+            </h3>
+
+            <p>
+              Alimento para gallinas
+            </p>
+
+            <p>
+              Presentación: 40 kg
+            </p>
+
+            <p class="precio">
+              $33.00
+            </p>
+
+            <button
+              onclick="agregarAlCarrito(
+                'Gallina Ponedora 40 kg',
+                33
+              )"
+            >
+              Agregar al pedido
+            </button>
+
+          </article>
+
+
+          <!-- PRODUCTOS AGREGADOS DESDE ADMIN -->
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROMOCIONES -->
+
+    <section
+      id="promociones"
+      class="seccion seccion-clara"
+    >
+
+      <div class="contenedor">
+
+        <div class="titulo-seccion">
+
+          <span>OFERTAS</span>
+
+          <h2>
+            Promociones y novedades
+          </h2>
+
+          <p>
+            Revisa nuestras promociones disponibles.
+          </p>
+
+        </div>
+
+
+        <div
+          id="lista-promociones"
+          class="grid-contenido"
+        >
+
+          <article class="tarjeta">
+
+            <div class="icono">
+              🔥
+            </div>
+
+            <h3>
+              Próximamente
+            </h3>
+
+            <p>
+              Aquí publicaremos nuestras
+              promociones y novedades.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONSEJOS -->
+
+    <section
+      id="consejos"
+      class="seccion"
+    >
+
+      <div class="contenedor">
+
+        <div class="titulo-seccion">
+
+          <span>INFORMACIÓN</span>
+
+          <h2>
+            Consejos agropecuarios
+          </h2>
+
+          <p>
+            Información útil para cuidar y alimentar
+            mejor a tus animales.
+          </p>
+
+        </div>
+
+
+        <div
+          id="lista-consejos"
+          class="grid-contenido"
+        >
+
+          <article class="tarjeta">
+
+            <div class="icono">
+              🌾
+            </div>
+
+            <h3>
+              Alimentación adecuada
+            </h3>
+
+            <p>
+              Una buena alimentación ayuda al
+              crecimiento y desarrollo de los animales.
+            </p>
+
+          </article>
+
+
+          <article class="tarjeta">
+
+            <div class="icono">
+              🐷
+            </div>
+
+            <h3>
+              Cuidado de los cerdos
+            </h3>
+
+            <p>
+              Mantén siempre agua limpia y un espacio
+              adecuado para tus animales.
+            </p>
+
+          </article>
+
+
+          <article class="tarjeta">
+
+            <div class="icono">
+              🐔
+            </div>
+
+            <h3>
+              Cuidado de las aves
+            </h3>
+
+            <p>
+              Una alimentación constante y buenas
+              condiciones ayudan a mantener las aves.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- BLOG -->
+
+    <section
+      id="blog"
+      class="seccion seccion-clara"
+    >
+
+      <div class="contenedor">
+
+        <div class="titulo-seccion">
+
+          <span>BLOG</span>
+
+          <h2>
+            Noticias y consejos
+          </h2>
+
+          <p>
+            Información y novedades de
+            Agropecuaria Apureñito.
+          </p>
+
+        </div>
+
+
+        <div
+          id="lista-blog"
+          class="grid-contenido"
+        >
+
+          <article class="tarjeta">
+
+            <div class="icono">
+              📰
+            </div>
+
+            <h3>
+              Próximamente
+            </h3>
+
+            <p>
+              Aquí publicaremos noticias,
+              consejos y novedades.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- NOSOTROS -->
+
+    <section
+      id="nosotros"
+      class="seccion seccion-clara"
+    >
+
+      <div class="contenedor dos-columnas">
+
+        <div>
+
+          <div class="titulo-seccion alineado-izquierda">
+
+            <span>NOSOTROS</span>
+
+            <h2>
+              Agropecuaria Apureñito
+            </h2>
+
+          </div>
+
+          <p>
+            Somos una agropecuaria dedicada a ofrecer
+            alimentos para animales y productos para
+            el sector agropecuario.
+          </p>
+
+          <br>
+
+          <p>
+            Nuestro objetivo es brindar productos de
+            calidad y una atención cercana a nuestros
+            clientes.
+          </p>
+
+        </div>
+
+
+        <div class="tarjeta destacado">
+
+          <h3>
+            ¿Tienes alguna pregunta?
+          </h3>
+
+          <p>
+            Escríbenos directamente por WhatsApp
+            y te ayudaremos.
+          </p>
+
+          <br>
+
+          <a
+            href="https://wa.me/584243349562"
+            target="_blank"
+            class="boton-principal"
+          >
+            WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- GALERÍA -->
+
+    <section
+      id="galeria"
+      class="seccion"
+    >
+
+      <div class="contenedor">
+
+        <div class="titulo-seccion">
+
+          <span>FOTOS</span>
+
+          <h2>
+            Galería
+          </h2>
+
+          <p>
+            Conoce nuestros productos y actividades.
+          </p>
+
+        </div>
+
+
+        <div
+          id="galeria-publica"
+          class="galeria"
+        >
+
+          <div class="galeria-vacia">
+
+            <p>
+              Próximamente agregaremos fotografías
+              de nuestra agropecuaria y productos.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- UBICACIÓN -->
+
+    <section
+      id="ubicacion"
+      class="seccion seccion-clara"
+    >
+
+      <div class="contenedor ubicacion">
+
+        <div class="titulo-seccion">
+
+          <span>VISÍTANOS</span>
+
+          <h2>
+            Nuestra ubicación
+          </h2>
+
+          <p>
+            Puedes visitarnos en nuestra sede.
+            También puedes contactarnos por WhatsApp
+            para confirmar disponibilidad y delivery.
+          </p>
+
+        </div>
+
+
+        <div class="mapa-contenedor">
+
+          <iframe
+            src="https://www.google.com/maps?q=https://maps.app.goo.gl/VwzQ2GP4TSHFyxL56&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            title="Ubicación de Agropecuaria Apureñito"
+          >
+          </iframe>
+
+        </div>
+
+
+        <div class="botones-ubicacion">
+
+          <a
+            href="https://maps.app.goo.gl/VwzQ2GP4TSHFyxL56"
+            target="_blank"
+            class="boton"
+          >
+            📍 Cómo llegar
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACTO -->
+
+    <section
+      id="contacto"
+      class="seccion contacto"
+    >
+
+      <div class="contenedor">
+
+        <div class="titulo-seccion">
+
+          <span>CONTACTO</span>
+
+          <h2>
+            Contáctanos
+          </h2>
+
+          <p>
+            Estamos disponibles para atender
+            tus consultas y pedidos.
+          </p>
+
+        </div>
+
+
+        <div class="contacto-grid">
+
+          <a
+            href="https://wa.me/584243349562"
+            target="_blank"
+            class="contacto-card"
+          >
+
+            <span>📱</span>
+
+            <h3>
+              WhatsApp
+            </h3>
+
+            <p>
+              +58 424 334 9562
+            </p>
+
+          </a>
+
+
+          <div class="contacto-card">
+
+            <span>📦</span>
+
+            <h3>
+              Pedidos
+            </h3>
+
+            <p>
+              Selecciona tus productos y
+              envíanos tu pedido.
+            </p>
+
+          </div>
+
+
+          <div class="contacto-card">
+
+            <span>🚚</span>
+
+            <h3>
+              Delivery
+            </h3>
+
+            <p>
+              Realizamos entregas según
+              disponibilidad y zona.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="redes-sociales">
+
+          <a
+            href="https://www.facebook.com/share/1SA7HnPrPt/"
+            target="_blank"
+            class="red-social"
+          >
+            Facebook
+          </a>
+
+          <a
+            href="https://www.instagram.com/agroapurenito"
+            target="_blank"
+            class="red-social"
+          >
+            Instagram
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- DELIVERY -->
+
+    <section
+      id="delivery"
+      class="seccion delivery"
+    >
+
+      <div class="contenedor">
+
+        <div class="delivery-contenido">
+
+          <div>
+
+            <span class="etiqueta">
+              DELIVERY
+            </span>
+
+            <h2>
+              Llevamos tu pedido hasta ti
+            </h2>
+
+            <p>
+              Nosotros mismos realizamos el delivery.
+              Consulta disponibilidad y costo al
+              momento de realizar tu pedido.
+            </p>
+
+          </div>
+
+
+          <a
+            href="https://wa.me/584243349562"
+            target="_blank"
+            class="boton-principal"
+          >
+            Consultar delivery
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CARRITO -->
+
+    <section
+      id="carrito"
+      class="seccion carrito-seccion"
+    >
+
+      <div class="contenedor">
+
+        <div class="titulo-seccion">
+
+          <span>PEDIDO</span>
+
+          <h2>
+            🛒 Mi pedido
+          </h2>
+
+          <p>
+            Revisa tus productos antes de enviarnos
+            el pedido por WhatsApp.
+          </p>
+
+        </div>
+
+
+        <div class="carrito">
+
+          <div
+            id="lista-pedido"
+            class="lista-pedido"
+          >
+
+            <p class="carrito-vacio">
+              No has agregado productos todavía.
+            </p>
+
+          </div>
+
+
+          <div class="carrito-final">
+
+            <strong>
+              Total: $<span id="total-sacos">0.00</span>
+            </strong>
+
+            <button
+              class="boton-whatsapp"
+              onclick="enviarWhatsApp()"
+            >
+              Enviar pedido por WhatsApp
+            </button>
+
+          </div>
+
+
+          <button
+            class="boton-principal"
+            onclick="vaciarCarrito()"
+          >
+            Vaciar pedido
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- CHATBOT -->
+
+  <button
+    id="boton-chat"
+    class="boton-chat"
+    onclick="alternarChat()"
+    aria-label="Abrir asistente"
+  >
+    💬
+  </button>
+
+
+  <div
+    id="chatbot"
+    class="chatbot"
+  >
+
+    <div class="chatbot-cabecera">
+
+      <h3>
+        Asistente Apureñito
+      </h3>
+
+      <button
+        class="chatbot-cerrar"
+        onclick="alternarChat()"
+        aria-label="Cerrar asistente"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div
+      id="chat-mensajes"
+      class="chat-mensajes"
+    >
+
+      <div class="mensaje-chat mensaje-bot">
+        ¡Hola! ¿En qué podemos ayudarte?
+      </div>
+
+    </div>
+
+
+    <div class="chatbot-preguntas">
+
+      <button onclick="preguntaChat('productos')">
+        ¿Qué productos tienen?
+      </button>
+
+      <button onclick="preguntaChat('delivery')">
+        ¿Hacen delivery?
+      </button>
+
+      <button onclick="preguntaChat('ubicacion')">
+        ¿Dónde están ubicados?
+      </button>
+
+      <button onclick="preguntaChat('pedido')">
+        ¿Cómo hago un pedido?
+      </button>
+
+      <button onclick="preguntaChat('contacto')">
+        ¿Cómo los contacto?
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- PIE DE PÁGINA -->
+
+  <footer>
+
+    <div class="contenedor footer-contenido">
+
+      <div>
+
+        <h3>
+          Agropecuaria Apureñito C.A.
+        </h3>
+
+        <p>
+          Alimentos para cerdos, pollos y gallinas.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <p>
+          © 2026 Agropecuaria Apureñito.
+          Todos los derechos reservados.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
